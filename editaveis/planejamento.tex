@@ -183,36 +183,169 @@ Para selecionar uma metodologia para apoiar o desenvolvimento foi analisado o am
 	O projeto apresenta requisitos inst\'aveis, tamb\'em como o surgimento de novos requisitos durante a execu\c{c}\~ao do projeto, essas caracter\'isticas s\~ao uma das que mais impactaram a sele\c{c}\~ao da metodologia \textit{Scrum}. Tamb\'em o contato com o cliente ocorre de forma simples e pode ser estabelecida semanalmente. O cliente identificado na identifica\c{c}\~ao dos \textit{stakeholders} \'e a Administra\c{c}\~ao do Gama-DF e devido a proximidade geogr\'afica de alguns integrantes da equipe de desenvolvimento com a Administra\c{c}\~ao do Gama acabou influenciando a sele\c{c}\~ao da metodologia. 
 Para adapta\c{c}\~ao da metodologia de acordo com as reais necessidades do projeto, primeiramente foi utilizado o SAFe (\textit{Scaled Agile Framework}) que fornece uma estrutura para aplica\c{c}\~ao de metodos \'ageis para desenvolvimento de projetos. A partir deste \textit{framework} foi constru\'ido um processo de desenvolvimento que ser\'a aplicado no projeto de acordo com as necessidades da equipe. O processo foi modelado utilizando o Bizagi Modeler, abaixo segue a descrição do processo modelado
 
+\begin{landscape}
 \subsubsection{Visão Completa do Processo}
+
 \begin{figure}[H]
 	\centering
 	\label{Visão geral do processo modelado}
-		\includegraphics[keepaspectratio=true,scale=0.9,angle=270]{planejamento/ProcessoCompleto.png}
+		\includegraphics[keepaspectratio=true,scale=0.9,angle=360]{processo/ProcessoCompleto.png}
 	\caption{Visão geral do processo modelado.}
 \end{figure}
-
+\end{landscape}
 \subsubsection{Iniciar Projeto}
 
 \begin{figure}[H]
 	\centering
 	\label{Visão do processo Iniciar Projeto}
-		\includegraphics[keepaspectratio=true,scale=0.9,angle=270]{planejamento/IniciarProjeto.png}
+		\includegraphics[keepaspectratio=true,scale=0.7,angle=360]{processo/IniciarProjeto.png}
 	\caption{Visão do processo Iniciar Projeto.}
 \end{figure}
 
 No processo iniciar projeto é onde ocorre o levantamento das informações fundamentais para iniciação do projeto. 
 
 \begin{enumerate}
-	\item Identificar objetivos. 
+	\item \textbf{Identificar objetivos:} 
 		Identificar todos os objetivos necessários para realização do termo de abertura do projeto, é nessa atividade que esse artefato é construído.
-	\item Identificar stakeholders.
+	\item \textbf{Identificar stakeholders:}
 		Identificar todas as pessoas e organizações que estão interessadas ou serão impactadas com o desenvolvimento do projeto. 
 \end{enumerate}
 
 \begin{itemize}
-	\item Termo de abertura do projeto
-	Documento com as definições fundamentais para definição/estruturação do trabalho. 
+	\item \textbf{Artefatos:}
+		\begin{itemize}
+		\item Termo de abertura do projeto: Documento com as definições fundamentais para definição/estruturação do trabalho. 
+		\end{itemize}
 \end{itemize}
+
+\subsubsection{Manter Planejamento}
+
+No processo Manter Planejamento é onde ocorre as atividades de identificação/conhecimento do problema ao qual o projeto será realizado, também ocorre a identificação dos requisitos necessários para o projeto e o planejamento iterativo do projeto. 
+
+\begin{landscape}
+\begin{figure}[H]
+	\centering
+	\label{Visão do processo Manter Planejamento}
+		\includegraphics[keepaspectratio=true,scale=0.9,angle=360]{processo/manterPlanejamento.png}
+	\caption{Visão do processo Manter Planejamento.}
+\end{figure}
+\end{landscape}
+
+\begin{enumerate}
+	\item \textbf{Analisar problema:}  
+	Aplicação de técnicas de análise do problema com o intuito de tomar conhecimento das reais necessidades dos stakeholders, nesta atividade é aplicada a técnica do fishbone, diagrama de pareto e o 5W2H.
+	\item \textbf{Levantar requisitos:} 
+	Atividade ao qual é levantado os requisitos necessários de todo o projeto, sobre o olhar das principais necessidades do cliente. Requisitos não funcionais do projeto são levatados, mas o foco da atividade é levantar as principais características tecnológicas que podem ser aplicadas ao projeto.
+	\item \textbf{Identificar features:} 
+	Identificação das principais características que o parque necessita para prover de uma maior interação com a sociedade. 
+	\item \textbf{Priorizar features:} 
+	Definir quais são as características mais importantes de serem implementadas no parque.
+	\item \textbf{Definir prazo da sprint:} 
+	Reunião com todos os membros do projeto com o intuito de determinar o intervalo em dias/semanas das sprints do projeto. 
+	\item \textbf{Gerenciar comunicação:} 
+	Reunião para definir quais são as ferramentas de comunicação que podem ser implemnetadas no projeto e desenvolver um planejamento de comunicação.
+	\item \textbf{Definir cronograma:} 
+	Construir cronograma de acordo com os marcos do projeto e os artefatos entregáveis. 
+	\item \textbf{Revisão dos artefatos:} 
+	Realizar revisão de todos os artefatos gerados no fluxo de manter planejamento. 
+\end{enumerate}
+
+\begin{itemize}
+	\item Artefatos
+	\begin{itemize}
+		\item 5W2H
+		\item Fishbone
+		\item Diagrama de pareto
+		\item EAP
+		\item Declaração de escopo do projeto
+		\item Product Backlog 
+		\item Plano de gerenciamento de comunicação
+		\item Cronograma do projeto
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Planejar Sprint}
+
+É uma reunião que seu objetivo é fazer o planejamento da Sprint. Na primeira parte a equipe do projeto faz outra atividade que visa tornar mais claro o que ainda deve ser feito esses requisitos devem ser prioritariamente levantados a partir das features priorizadas na atividade anterior.
+
+\begin{figure}[H]
+	\centering
+	\label{Visão do processo Planejar Sprint}
+		\includegraphics[keepaspectratio=true,scale=0.9,angle=360]{processo/planejarSprint.png}
+	\caption{Visão do processo Planejar Sprint.}
+\end{figure}
+
+\begin{enumerate}
+	\item \textbf{Reunir informações para sprint:} 
+	Analisar o product backlog e identificar quais características do projeto tem maior relevânica de ser projetada sobre o olhar das necessidades do usuário do parque do Gama-DF, através destas informações é definido o que será projetado na sprint. 
+	\item \textbf{Definir objetivo da sprint:} 
+	Reunião para identificar onde a equipe do projeto deseja chegar ao final da sprint, quais são as metas desejadas. 
+\end{enumerate}
+
+\begin{itemize}
+	\item Artefato
+	\begin{itemize}
+		\item Backlog da sprint
+		O backlog da sprint possui as características do projeto que serão pesquisadas/projetadas durante a execução da sprint. 
+	\end{itemize}
+\end{itemize}
+
+
+\subsubsection{Controlar Sprint}
+
+Essa atividade tem como objetivo acompanhar o andamento da Sprint, o subgerente de Recursos Humanos e Controle é responsável por avaliar a produção do time.
+
+\begin{figure}[H]
+	\centering
+	\label{Visão do processo Controlar Sprint}
+		\includegraphics[keepaspectratio=true,scale=0.7,angle=360]{processo/controlarSprint.png}
+	\caption{Visão do processo Controlar Sprint.}
+\end{figure}
+
+\begin{enumerate}
+	\item \textbf{Apresentar resultados durante o andamento:}
+	Essa atividade tem como objetivo mostrar os resultados obtidos pelo time durante a execução da sprint ao subgerente de Recursos Humanos e Controle.
+	\item \textbf{Apresentar dificuldades da sprint:}
+	Apresentar dificuldades durante a execução da Sprint ao subgerente de Recursos Humanos e Controle.
+	\item \textbf{Validar os resultados obitidos:}
+	O subgerente de Recursos Humanos e Controle valida se o que o time está executando na Sprint e de forma correta.
+	\item \textbf{Propôr soluções para as dificuldades:}
+	O subgerente de Recursos Humanos e Controle propõe soluções para o time de acordo com as informações apresentadas.
+\end{enumerate}
+
+\subsubsection{Executar Sprint}
+
+Para a atividade de executar a Sprint temos que consultar o product backlog e é selecionado as características mais relevantes do projeto para serem pesquisadas/projetadas. Essa é a atividade onde são levantadas as soluções para o problema do parque urbano do Gama-DF
+
+\begin{figure}[H]
+	\centering
+	\label{Visão do processo Executar Sprint}
+		\includegraphics[keepaspectratio=true,scale=0.5,angle=360]{processo/executarSprint.png}
+	\caption{Visão do processo Executar Sprint.}
+\end{figure}
+
+\begin{enumerate}
+	\item \textbf{Consultar sprint backlog:}
+	Nessa atividade o time deve consultar as caraterísticas do projeto definidas para a Sprint.
+	\item \textbf{Desenvolver solução:}
+	Aplicar medidas técnicas de desenvolvimento para prover solução.
+	\item \textbf{Validar soluções:}
+	O subgerente e o gerente verifica se a solução implementada atende sua necessidade real do parque urbano do Gama-DF. 
+	\item \textbf{Finalizar requisito:}
+	Finalizar requisito do projeto ao executado na sprint, nesta atividade é realizada a validação da solução com todos os integrantes do projeto. 
+	\item \textbf{Realizar reunião}
+	Reunião realizada durante os encontros para desenvolvimento do projeto, com intuito de prover uma integração de todas as equipes do projeto. 
+\end{enumerate}
+
+\subsubsection{Revisar Sprint}
+
+Está é uma reunião realizada no final da sprint. Tem como Objetivo apresentar o que  a equipe fez durante a sprint e apresentar o produto para os Subgerentes e o gerente. 
+
+\subsubsection{Realizar Retrospectiva}
+Tem como objetivo avaliar o que deu certo e errado durante a sprint, e fazer os ajustes possíveis  para a proxima Sprint.
+
+\subsection{Atualizar backlog}
+Depois de executada a Sprint é realizada a atualização do backlog de programa onde pode ser detectado novos requisitos que refletem mudanças no sistema, eles poderão ser propostos nesta atividade e analisados e validados na (primeira atividade do fluxo de planejar Sprint: "Reunir informações para sprint") para que a mudança seja consistente e não impacte de maneira negativa a solução do projeto. Isso garante que as mudanças sejam realizadas e implementadas com sucesso, sem que haja perda na qualidade da solução do projeto.
 
 \section{Fundamenta\c{c}\~ao Te\'orica}
 
@@ -316,7 +449,6 @@ Reduzir, reutilizar e reciclar. \'E com base nesses tr\^es princ\'ipios que perc
 
 	O programa prev\^e que \'e responsabilidade todos, separar os res\'iduos, desde o funcion\'ario at\'e o visitante. O programa funciona de forma que torna-se comum o visitante do parque se deparar com duas lixeiras, uma laranja, para res\'iduo recicl\'avel e outra cinza, destinada ao res\'iduo n\~ao recicl\'avel, como por exemplo, os org\^anicos. Al\'em das cores das lixeiras, tamb\'em s\~ao utilizados cores diferentes de sacos de lixo. Desta forma quando os res\'iduos chegam aos bastidores, j\'a se sabe o tipo de res\'iduos e a forma/local de armazenamento.
 
-\subsection{L\^ampadas de LED}
 
 \subsection{Solu\c{c}\~ao de servi\c{c}os}
 
