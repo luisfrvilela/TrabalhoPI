@@ -1768,3 +1768,84 @@ A imagem a seguir apresenta algumas caracteristicas do produto:
 		\end{enumerate}
 	\end{itemize}
 \end{itemize}
+
+\section{Postes}
+
+\subsection{Adaptação do poste PTS para sistema \textit{ON-GRID} }
+
+	A Resolução Normativa 482 da ANEEL ? estabeleceu as condições gerais para a conexão à rede da microgeração (potência instalada menor que 100kWp) e minigeração (potência instalada entre 100kWp e 1MWp) distribuída no Brasil e criou o Sistema de Compensação de Energia. Tal sistema permite que sistemas fotovoltaicos  e outras formas de geração de energia a partir de fontes renováveis com até 1MW de potência  instalados em residências e empresas  se conectem a rede elétrica de forma simplificada, atendendo o consumo local e injetando o excedente na rede, gerando créditos de energia[4]. 
+	Desta forma, é possível praticamente zerar a conta de luz com o uso da energia solar, pagando apenas o custo de disponibilidade da rede. Quando um sistema fotovoltaico estiver gerando eletricidade, esta será consumida no local. Caso a geração seja maior que o consumo, o excedente é injetado na rede elétrica, gerando créditos de energia. Quando a geração for menor do que o consumo, será utilizada a energia da própria rede elétrica. Os créditos de energia possuem o mesmo valor da eletricidade da rede e podem ser utilizados para abater o consumo, diminuindo assim o valor da conta de energia, e possuem validade de até 36 meses para serem resgatados.
+	Os sistemas \textit{ON-GRID} ou \textit{GRID-TIE}, existentes atualmente são compostos de um inversor, capaz de converter a corrente contínua, produzida pelos painéis, em corrente alternada em sincronia com a rede elétrica.
+	O Inversor \textit{grid tie} Central, é o ideal para a aplicação na área de convivência social do parque, pois um único inversor desse tipo é capaz de atender toda a demanda dos postes solares do Parque. Ele recebe energia de vários painéis solares, ligados em série e paralelo, estabilizando com um único otimizador MPPT e fazendo sua função de inversor DC/AC. Há um ganho de custo por utilizar menor número de inversores. Ele seria uma central que receberia a energia excedente produzida pelos postes PTS 410 e injetaria na rede elétrica, caso a energia produzida no poste não seja suficiente para a manutenção do mesmo, ele permite que energia da rede seja utilizada nos postes. Os inversores centrais são comumente utilizados em sistemas fotovoltaicos com potências entre 20 e 400 kW, figura abaixo [2].
+	
+	%INSERIR FIGURA
+	
+	Na área de convivência social um único inversor central irá receber toda a potência produzida pelos painéis solares dos  13 postes. Sabendo que cada poste produz uma potência de 250 W, o inversor central irá receber em média 3250 W, ou seja, sua geração com irradiação máxima. Portanto optou-se por um inversor Fronius IG Plus 5V-1 (03.503.012), da neosolar energia, que recebe uma potência de até 4000W custa em média R\$ 8.400,00.
+	Para a Pista de Cooper devido sua extensão, é necessário outro tipo de inversor, pois um inversor central não conseguiria receber toda energia produzida nos postes, que ficam em uma área muito grande do Parque. Cada inversor recebe uma série ou string e vários inversores são utilizados em paralelo, cada um com seu otimizador MPPT [2]. Essa configuração permite maior flexibilidade, como diferentes orientações para cada string.  O Inversor grid tie modular é um sistema fotovoltaico modularizado, com um otimizador para cada série (string), porém há um ganho de custo com a utilização de um único inversor, quando comparamos com os inversores modulares. A maioria dos inversores atualmente utilizados são modulares,  proporcionando flexibilidade e ganhos de custo, tornando possível fragmentar os postes da pista de Cooper em strings(conjuntos) que utilizam o mesmo inversor, que são ligados a rede, figura a seguir.
+	
+	%INSERIR FIGURA
+	
+	A pista de Cooper contém 103 postes, e deve ser dividida em 4 strings. Cada string, deve se conter 26 postes, e um inversor que receba energia gerada por eles e injete na rede, ele deverá se localizar em um ponto intermediário de cada string. Sabendo que cada poste PTS 315 gera uma potência de 140 W, cada string irá produzir 3640 W de potência, e por segurança de projeto optou-se por um inversor com potência de entrada (potência produzida na string) 4.260W,   da linha de inversores produzida pela  Fronius ( Fronius IG Plus 5V-1 (03.503.012)), da neosolar energia. Cada inversor custa em média R\$ 8.400,00, e é o mesmo utilizado na área de convivência social mudando apenas o arranjo do sistema de inversor central para inversor modular [2]. 
+	
+	Especificações técnicas do fabricante
+	
+\begin{itemize}
+         \item Entrada
+                  \begin{itemize}
+                            \item Potência máxima de entrada: 4260W
+                            \item Voltagem máxima de entrada: 600Vcc
+                            \item Faixa de Voltagem do MPP: (230Vcc a 500Vcc)
+                            \item Voltagem mínima de entrada: 230Vcc
+                            \item Voltagem para inicialização: 260Vcc
+                            \item Corrente máxima de entrada: 18,6A
+                  \end{itemize}
+         \item Saida
+                  \begin{itemize}
+                            \item Potência nominal de saída: 4000W
+                            \item Voltagem de saída (faixa): 180Vca a 270Vca
+                            \item Frequência de saída: 60Hz
+                            \item Corrente máxima de saída: 17,4A
+                  \end{itemize}
+          \item Outras características 
+                  \begin{itemize}
+                            \item Eficiência Máxima: 95,7\%
+                            \item Consumo interno (noite): <1W
+                            \item Temperatura de Operação: -25$^{o}$C a +50$^{o}$C
+                            \item Frequência de saída: 60Hz
+                            \item Especificações Mecânicas
+                                    \begin{itemize}
+                                             \item Dimensões (L x A x P)mm: (673 x 434 x 250)
+                                             \item Peso: 23,8Kg
+                                    \end{itemize}
+                  \end{itemize}
+\end{itemize}
+
+\subsection{Medidor bidirecional}
+
+	Para o sistema de compensação protocolada pela ANEEL, a energia produzida em uma região de microgeração, antes de ser injetada na rede deve passar em um medidor bidirecional, no qual mede a energia produzida ( que é injetada na rede), e a energia que é utilizada da rede nos momentos de baixa geração (à noite). Observe a figura abaixo, de um modelo de sistema residencial.
+	
+	%INSERIR FIGURA
+	
+	Os medidores bidirecionais existentes no mercado atualmente, que atuam em uma voltagem de 220V, no caso do Parque custam em média R$ 360,00 cada. Os medidores são fornecidos pela Noesolar, e são necessários  um medidor para cada inversor. Sabendo que são necesários cinco inversores, consequentemente serão usados cinco medidores. Assim temos que o custo total dos medidores é de :
+	
+	\textbf{Custo total dos medidores: 5 unidades x 360 preço unitário = R\$ 1800,00. }
+	
+\subsection{Cabeamento e Conectores}
+
+	São específicos para sistemas fotovoltaicos e usados para as conexões entre painéis e inversores (lado corrente contínua - CC) e também entre inversores e rede elétrica (lado corrente alternada - AC). Devem ser resistentes à radiação ultravioleta e a intempéries, além de suportar temperaturas elevadas, típicas nesse sistema. Os cabos têm seção de 4 mm² ou 6 mm² e os conectores seguem o padrão conhecido como MC4 [1].
+	Os conectores tipo MC4 são utilizados especificamente em  sistemas fotovoltaicos . Este tipo de conector melhora a qualidade da instalação, facilita a conexão entre painéis e apresentam melhor durabilidade quando expostos as condições climáticas típicas de sistemas fotovoltaicos por grandes períodos, como insolação e umidade, figura a seguir.
+	
+	%INSERIR FIGURA
+	
+	Cada par de conectors macho/ fêmea necessários em cada placa, custam  em média R$ 14,00 de acordo com o fabricante Sunlab, sabendo que são 103 placas utilizadas na pista de cooper e 13 na área de convivência social, totalizando 116 placas, pode-se concluir que o custo total dos conectores é de :
+	
+	\textbf{Custo total dos conectores = 116 unidades x 14 preço unitário = R$ 1.640,00.}
+	
+	Aos conectores das placas são acoplados cabos que devem chegar até os inversores e posteriormente à rede, os fios conectores indicados pela empresa Sunlab,( que faz parte de um grupo de empresas voltadas para a energia fotovoltáica), são :
+	
+Par de condutores flexíveis Conduspar com espessura de 6,0mm² de alta qualidade com certificação INMETRO. Os cabos são feitos em cobre eletrolítico com isolamento para tensões nominais até 450/7.[5]
+O Par é constituído de um metro de  fio preto e um metro de fio vermelho, de diâmetro de 6mm, e custa R\$ 4, 56. Sabendo que eles são utilizados para fazer a ligação em paralelo entre os postes, que estão ligados uns ao outros em strings. Portanto sabendo que o perímetro da pista de Cooper em ciclo completo em volta da pista é de 6684,58 m o perímetro da área de convivência social, 400 m possível determinar o custo aproximado dos cabos utilizados, para fazer a conexão dos postes na rede. O perímetro total da área de aplicação dos postes é de 7044,58 metros, assim o custo é de:
+
+	\textbf{Custo aproximado do cabeamento: Preço unitário por metro R$ 4,56 x Perímetro total  7.044,58 m  =  R\$ 32.123,30.}
+	
+	Assim o valor aproximado para o cabeamento que liga os postes para aos inversores é de R\$ 32.123,30. Esse valor é variável em função da organização e localização dos inversores das strings, além da distância da rede Pública ao local de instalação dos inversores. A rede atualmente não passa nas imediações do Parque, mas o projeto em andamento indica que essa rede será instalada com certa proximidade, facilitando a ligação dos inversores com a rede é diminuindo uma possível oscilação do custo total dos cabos.
